@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About</title>
+	<!--Header-->
+	<link rel="stylesheet" type="text/css" href="Astyle.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="M1style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <!--Side social Navigation-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+</head>
+<body>
+	<!--Header Navigationbar-->
+	<header>
+      <div class="inner-width">
+        <a href="index.html" class="logo"><img src="logo.png" alt=""></a>
+        <i class="menu-toggle-btn fas fa-bars"></i>
+        <nav class="navigation-menu">
+          <a href="index.html"><i class="fas fa-home home"></i> Home</a>
+          <a href="#"><i class="fa fa-shopping-cart shopping-cart"></i> Cart</a>
+          <a href="#"><i class="fas fa-heart wishlist"></i>Wishlist</a>
+          <a href="#"><i class="fas fa-users team"></i>Team</a>
+          <a href="about.html"><i class="fa fa-info-circle about"></i>About</a>
+          <a href="#"><i class="fas fa-headset contact"></i>Contact</a>
+          <a href="#"><i class="fas fa-user user"></i>Login</a>
+        </nav>
+        <div style="clear:both;"></div>
+      </div>
+    </header>
+
+
+    <script type="text/javascript">
+      $(".menu-toggle-btn").click(function(){
+        $(this).toggleClass("fa-times");
+        $(".navigation-menu").toggleClass("active");
+      });
+    </script>
+
+	<section>
+		<video src="smoke.mp4" autoplay muted></video>
+		<h1>
+			<span>C</span>
+			<span>O</span>
+			<span>M</span>
+			<span>I</span>
+			<span>N</span>
+			<span>G</span>
+			<span>S</span>
+			<span>O</span>
+			<span>O</span>
+			<span>N</span>
+		</h1>
+	</section>
+	<!--Side Social Navigation Bar-->
+    <nav class="social">
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+    	<ul>
+    		<li><a href="">Twitter <i class="fa fa-twitter"></i></a></li>
+    		<li><a href="">FaceBook <i class="fa fa-facebook"></i></a></li>
+    		<li><a href="">Instagram <i class="fa fa-instagram"></i></a></li>
+    		<li><a href="">Google+ <i class="fa fa-google-plus"></i></a></li>
+    	</ul>
+    </nav>
+</body>
+</html>

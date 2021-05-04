@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Product Display</title>
+    <!--Header-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="M1style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <!--Side social Navigation-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  </head>
+  <body>
+  	<!--Header Navigationbar-->
+    <header class="Header" id="myHeader">
+      <div class="inner-width">
+        <a href="index.html" class="logo"><img src="logo.png" alt=""></a>
+        <i class="menu-toggle-btn fas fa-bars"></i>
+        <nav class="navigation-menu">
+          <a href="#"><i class="fas fa-home home"> </i> Home</a>
+          <a href="#"><i class="fa fa-shopping-cart shopping-cart"> </i> Cart</a>
+          <a href="#"><i class="fas fa-heart wishlist"> </i>Wishlist</a>
+          <a href="#"><i class="fas fa-users team"> </i>Team</a>
+          <a href="about.html"><i class="fa fa-info-circle about"> </i>About</a>
+          <a href="#"><i class="fas fa-headset contact"> </i>Contact</a>
+          <a href="#"><i class="fas fa-user user"> </i> Login</a>
+        </nav>
+        <div style="clear:both;"></div>
+      </div>
+    </header>
+    <script type="text/javascript">
+      $(".menu-toggle-btn").click(function(){
+        $(this).toggleClass("fa-times");
+        $(".navigation-menu").toggleClass("active");
+      });
+    </script>
+    <!--sticky Header script-->
+    <script type="text/javascript">
+    	window.onscroll = function() {myFunction()};
+
+		// Get the header
+		var header = document.getElementById("myHeader");
+
+		// Get the offset position of the navbar
+		var sticky = header.offsetTop;
+
+		// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+		function myFunction() {
+		  if (window.pageYOffset > sticky) {
+		    header.classList.add("sticky");
+		  } else {
+		    header.classList.remove("sticky");
+		  }
+		}
+    </script> 
+    <!--Side Social Navigation Bar-->
+    <nav class="social">
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+    	<ul>
+    		<li><a href="">Twitter <i class="fa fa-twitter"></i></a></li>
+    		<li><a href="">FaceBook <i class="fa fa-facebook"></i></a></li>
+    		<li><a href="">Instagram <i class="fa fa-instagram"></i></a></li>
+    		<li><a href="">Google+ <i class="fa fa-google-plus"></i></a></li>
+    	</ul>
+    </nav>
+  </body>
+</html>
